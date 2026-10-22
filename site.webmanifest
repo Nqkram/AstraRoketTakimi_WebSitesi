@@ -1,0 +1,17 @@
+{
+  "name": "Astra Roket Takımı",
+  "short_name": "Astra",
+  "description": "2021 yılında Teknogaraj bünyesinde kurulan Astra Roket Takımı. 2027 TEKNOFEST A2 Orta İrtifa hedefi.",
+  "lang": "tr",
+  "start_url": "./",
+  "display": "browser",
+  "theme_color": "#10164b",
+  "background_color": "#0a0c27",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "644x636",
+      "type": "image/png"
+    }
+  ]
+}

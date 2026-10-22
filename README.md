@@ -1,2 +1,1 @@
-# AstraRoketTakimi_WebSitesi
-Astra Roket Takımı resmi web sitesi
+# teknogaraj-roket-takimi_
