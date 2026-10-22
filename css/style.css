@@ -22,14 +22,14 @@
    1. DEĞİŞKENLER — sitenin tüm renkleri buradan yönetilir
    ===================================================================== */
 :root{
-  --bordo:        #2737a5;   /* ANA LACİVERT (logodan) */
-  --bordo-acik:   #8290ff;   /* Vurgu tonu */
-  --bordo-koyu:   #202c79;   /* Kenarlık / çizgi */
-  --siyah:        #0a0c27;   /* Sayfa arka planı */
-  --gri:          #10164b;   /* KOYU MAVİ — kutu arka planı */
-  --gri-acik:     #171d57;
-  --beyaz:        #f4f3ff;   /* Ana yazı rengi */
-  --sonuk:        #c2c5df;   /* Soluk yazı — WCAG AA için açıldı */
+  --bordo:        #7b0126;   /* ANA BORDO (logodan) */
+  --bordo-acik:   #c4184a;   /* Vurgu tonu */
+  --bordo-koyu:   #4d0117;   /* Kenarlık / çizgi */
+  --siyah:        #0a0a0a;   /* Sayfa arka planı */
+  --gri:          #111111;   /* KOYU GRİ (logodan) — kutu arka planı */
+  --gri-acik:     #1b1b1b;
+  --beyaz:        #f4f2f1;   /* Ana yazı rengi */
+  --sonuk:        #b3abab;   /* Soluk yazı — WCAG AA için açıldı */
   --cizgi:        rgba(255,255,255,.12);
 
   /* Yazı tipi: Times ailesi. Harici font YÜKLENMEZ (performans). */
@@ -102,7 +102,7 @@ a{color:inherit;}
    ===================================================================== */
 .ustcubuk{
   position:sticky; top:0; z-index:900;
-  background:rgba(10,12,39,.94);
+  background:rgba(10,10,10,.94);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--bordo-koyu);
   padding-top:env(safe-area-inset-top, 0px);
@@ -165,8 +165,8 @@ a{color:inherit;}
 .kapak{
   position:relative; overflow:hidden;
   background:
-    radial-gradient(900px 520px at 78% 38%, rgba(39,55,165,.48), transparent 62%),
-    linear-gradient(180deg, #0a0c27 0%, #10164b 100%);
+    radial-gradient(900px 520px at 78% 38%, rgba(123,1,38,.42), transparent 62%),
+    linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
   padding:86px 0 96px;
 }
 /* Arka plandaki ince dikey çizgiler (rampa hissi) */
@@ -177,7 +177,7 @@ a{color:inherit;}
 .kapak-ic{position:relative; z-index:2; display:grid; grid-template-columns:1fr 340px; gap:56px; align-items:center;}
 .kapak h1{font-size:clamp(40px, 7vw, 78px); line-height:1.02; margin:0 0 20px; font-weight:400;}
 .ustyazi{font-size:13px; letter-spacing:6px; color:var(--bordo-acik); text-transform:uppercase; margin:0 0 20px;}
-.kapak .giris{font-size:19px; color:#e0e2f7; max-width:640px; margin:0 0 34px;}
+.kapak .giris{font-size:19px; color:#ddd6d6; max-width:640px; margin:0 0 34px;}
 
 .logo-cerceve{border:1px solid var(--bordo-koyu); padding:16px; background:rgba(0,0,0,.35);}
 /* Görsel yüklenmeden yerini ayırır -> layout shift (CLS) olmaz */
@@ -224,10 +224,10 @@ a{color:inherit;}
 .kartlar{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 .kart{background:var(--gri); border:1px solid var(--cizgi); border-top:3px solid var(--bordo); padding:30px 26px;}
 .kart h3{margin:0 0 12px; font-size:24px; font-weight:400;}
-.kart p{margin:0 0 14px; color:#d0d2ea; font-size:16.5px;}
+.kart p{margin:0 0 14px; color:#cfc8c8; font-size:16.5px;}
 .kart ul{margin:0; padding-left:20px; color:var(--sonuk); font-size:16px;}
 .kart ul li{margin-bottom:6px;}
-.kart-not{font-size:14px; color:#a1a6c8; font-style:italic; margin-top:16px;}
+.kart-not{font-size:14px; color:#8a8181; font-style:italic; margin-top:16px;}
 
 
 /* =====================================================================
@@ -272,14 +272,14 @@ a{color:inherit;}
   /* Uzun e-posta adresi dar ekranda taşmasın */
   max-width:100%; word-break:break-word;
 }
-.baglanti:hover{border-color:var(--bordo); background:rgba(39,55,165,.22);}
+.baglanti:hover{border-color:var(--bordo); background:rgba(123,1,38,.18);}
 .baglanti svg{width:18px; height:18px; flex-shrink:0;}
 
 
 /* =====================================================================
    11. FOOTER
    ===================================================================== */
-.altbilgi{border-top:1px solid var(--bordo-koyu); background:#080a20; padding:40px 0; text-align:center;}
+.altbilgi{border-top:1px solid var(--bordo-koyu); background:#070707; padding:40px 0; text-align:center;}
 .altbilgi p{margin:6px 0; color:var(--sonuk); font-size:15px;}
 .altbilgi a{color:var(--sonuk);}
 .altbilgi a:hover{color:var(--beyaz);}

@@ -1,3 +1,1 @@
-# teknogaraj-roket-takimi_ 
-
-* Resmi Web Sitesi *
+# teknogaraj-roket-takimi_

@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 
 # DEĞİŞTİRİN: alan adınızı yazın
-Sitemap: https://nqram.github.io/astra-roket-takimi/sitemap.xml
+Sitemap: https://ALAN-ADINIZ.com/sitemap.xml
